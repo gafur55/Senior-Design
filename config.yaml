@@ -1,0 +1,6 @@
+path: /home/gafur/Documents/senior-design/code/data
+train: images/train
+val: images/train
+
+names:
+  0: strawberry-chobani
