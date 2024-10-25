@@ -3,7 +3,6 @@ from ultralytics import YOLO
 
 # Load your trained YOLOv8 model
 model = YOLO('/home/gafur/Documents/senior-design/code/local_env/runs_strawberry_chobani_300/runs/detect/train/weights/best.pt')
-model = YOLO('/home/gafur/Documents/senior-design/code/local_env/runs_strawberry_chobani_300/runs/detect/train/weights/best.pt')
 
 # Initialize camera (0 is typically the default camera, adjust if necessary)
 cap = cv2.VideoCapture(0)

@@ -14,12 +14,12 @@ ret, frame = cap.read()
 H, W, _ = frame.shape
 out = cv2.VideoWriter(video_path_out, cv2.VideoWriter_fourcc(*'MP4V'), int(cap.get(cv2.CAP_PROP_FPS)), (W, H))
 
-model_path = '/home/gafur/Documents/senior-design/code/runs_strawberry_chobani_300/runs/detect/train/weights/best.pt'
+model_path = '/home/gafur/Documents/senior-design/code/local_env/runs_strawberry_chobani_300/runs/detect/train/weights/best.pt'
 
 # Load a model
 model = YOLO(model_path)  # load a custom model
 
-threshold = 0.7
+threshold = 0.5
 
 while ret:
 
